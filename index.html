@@ -1,0 +1,3247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>LULU Café & Brunch Frankfurt</title>
+    <meta content="Eine elegante digitale Plattform für das LULU Café & Brunch in Frankfurt Gallus mit osteuropäischer Küche, hausgemachten Gerichten und Online-Bestellung." name="description">
+    <meta content="LULU Café, Frankfurt Gallus, osteuropäische Küche, Pelmeni, Manti, Borschtsch, Brunch Frankfurt" name="keywords">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='20' width='32' height='24' rx='4' fill='%236F4E37'/%3E%3Crect x='8' y='20' width='32' height='6' rx='2' fill='%23D2A679'/%3E%3Cpath d='M40 26 Q50 26 50 32 Q50 38 40 38' stroke='%236F4E37' fill='none' stroke-width='4'/%3E%3Ccircle cx='16' cy='32' r='3' fill='%23D2A679'/%3E%3Ccircle cx='24' cy='32' r='3' fill='%23D2A679'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23D2A679'/%3E%3C/svg%3E" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='20' width='32' height='24' rx='4' fill='%236F4E37'/%3E%3Crect x='8' y='20' width='32' height='6' rx='2' fill='%23D2A679'/%3E%3Cpath d='M40 26 Q50 26 50 32 Q50 38 40 38' stroke='%236F4E37' fill='none' stroke-width='4'/%3E%3Ccircle cx='16' cy='32' r='3' fill='%23D2A679'/%3E%3Ccircle cx='24' cy='32' r='3' fill='%23D2A679'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23D2A679'/%3E%3C/svg%3E">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "LULU Café & Brunch",
+            "image": "https://i.postimg.cc/VNdhBjDW/image-2026-06-27-105724249-removebg-preview.png",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Mainzer Landstraße 305",
+                "addressLocality": "Frankfurt am Main",
+                "postalCode": "60326",
+                "addressCountry": "DE"
+            },
+            "telephone": "+491621855064",
+            "servesCuisine": ["Eastern European", "Russian", "Ukrainian"],
+            "priceRange": "€€",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "47"
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cream: #FAF6F1;
+            --dark: #1A1410;
+            --gold: #C8A96E;
+            --gold-light: #D4B97E;
+            --warm-brown: #251E17;
+            --card-bg: #251E17;
+            --text-muted: #9A8D7E;
+            --text-body: #5A4D40;
+            --section-alt: #F5EDE3;
+            --nav-bg: rgba(20, 15, 11, 0.97);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 3px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-28px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(28px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes floatUp {
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+        @keyframes pulseGold {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(200, 169, 110, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(200, 169, 110, 0);
+            }
+        }
+        @keyframes modalIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        @keyframes overlayIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes scrollDot {
+            0% {
+                top: 5px;
+                opacity: 1;
+            }
+            80% {
+                top: 18px;
+                opacity: 0;
+            }
+            100% {
+                top: 5px;
+                opacity: 0;
+            }
+        }
+        @keyframes telegramPulse {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 0 14px rgba(0, 136, 204, 0);
+            }
+        }
+
+        .anim-fadeInDown {
+            animation: fadeInDown 0.9s ease both;
+        }
+        .anim-fadeInUp {
+            animation: fadeInUp 0.9s ease both;
+        }
+        .anim-fadeIn {
+            animation: fadeIn 0.9s ease both;
+        }
+        .anim-d1 {
+            animation-delay: 0.1s;
+        }
+        .anim-d2 {
+            animation-delay: 0.25s;
+        }
+        .anim-d3 {
+            animation-delay: 0.4s;
+        }
+        .anim-d4 {
+            animation-delay: 0.55s;
+        }
+        .anim-d5 {
+            animation-delay: 0.7s;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(36px);
+            transition: opacity 0.75s ease, transform 0.75s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.75s ease, transform 0.75s ease;
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.75s ease, transform 0.75s ease;
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-d1 {
+            transition-delay: 0.1s;
+        }
+        .reveal-d2 {
+            transition-delay: 0.2s;
+        }
+        .reveal-d3 {
+            transition-delay: 0.3s;
+        }
+        .reveal-d4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ─── NAV ─── */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--nav-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(200, 169, 110, 0.12);
+            padding: 10px 0;
+            transition: box-shadow 0.3s;
+        }
+        nav.scrolled {
+            box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
+        }
+        .nav-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .nav-logo:hover {
+            transform: scale(1.03);
+        }
+        .nav-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(16px, 1.8vw, 22px);
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 1.5px;
+            animation: floatUp 3s ease-in-out infinite;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .nav-links button {
+            background: none;
+            border: none;
+            color: #D4C9BC;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+            letter-spacing: 0.4px;
+            transition: color 0.3s;
+            font-family: 'Inter', sans-serif;
+            padding: 0;
+            position: relative;
+        }
+        .nav-links button::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+        .nav-links button:hover {
+            color: var(--gold);
+        }
+        .nav-links button:hover::after {
+            width: 100%;
+        }
+
+        .btn-order {
+            background: var(--gold) !important;
+            color: #1A1410 !important;
+            padding: 10px 24px !important;
+            border-radius: 6px !important;
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            border: none !important;
+            cursor: pointer !important;
+            transition: background 0.3s, transform 0.2s !important;
+            font-family: 'Inter', sans-serif !important;
+            letter-spacing: 0.3px !important;
+        }
+        .btn-order::after {
+            display: none !important;
+        }
+        .btn-order:hover {
+            background: var(--gold-light) !important;
+            color: #1A1410 !important;
+            transform: translateY(-1px) !important;
+        }
+
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: rgba(200, 169, 110, 0.12);
+            border: 1px solid rgba(200, 169, 110, 0.25);
+            border-radius: 20px;
+            padding: 4px 6px;
+            cursor: pointer;
+        }
+        .lang-btn {
+            background: none !important;
+            border: none !important;
+            color: #9A8D7E !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            padding: 3px 8px !important;
+            border-radius: 14px !important;
+            transition: all 0.25s !important;
+            letter-spacing: 0.5px !important;
+            cursor: pointer !important;
+            font-family: 'Inter', sans-serif !important;
+        }
+        .lang-btn::after {
+            display: none !important;
+        }
+        .lang-btn.active {
+            background: var(--gold) !important;
+            color: var(--dark) !important;
+        }
+        .lang-btn:hover:not(.active) {
+            color: var(--gold) !important;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: #E8DDD0;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .hamburger.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .hamburger.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 64px;
+            left: 0;
+            right: 0;
+            background: rgba(20, 15, 11, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+            padding: 24px 28px 32px;
+            border-bottom: 1px solid rgba(200, 169, 110, 0.15);
+            flex-direction: column;
+            gap: 8px;
+            transform: translateY(-10px);
+            opacity: 0;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .mobile-nav.open {
+            display: flex;
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .mobile-nav button {
+            background: none;
+            border: none;
+            color: #D4C9BC;
+            font-size: 16px;
+            text-align: left;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(200, 169, 110, 0.08);
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            transition: color 0.2s;
+        }
+        .mobile-nav button:hover {
+            color: var(--gold);
+        }
+        .mobile-nav .btn-order-mobile {
+            margin-top: 12px;
+            background: var(--gold);
+            color: var(--dark) !important;
+            border-radius: 6px;
+            padding: 13px 0 !important;
+            text-align: center !important;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+        }
+
+        /* ─── HERO ─── */
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('https://tb-static.uber.com/prod/image-proc/processed_images/6f64d5d1fb1a3dcfa30d140ba5224ec8/63cdd1044c1bf03a6f4ce3a9422016b8.jpeg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.28);
+            transform: scale(1.05);
+            transition: transform 8s ease;
+        }
+        #hero.loaded .hero-bg {
+            transform: scale(1);
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(20, 15, 11, 0.18) 0%, rgba(20, 15, 11, 0.7) 100%);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 28px;
+            max-width: 720px;
+        }
+        .hero-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(72px, 15vw, 120px);
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 6px;
+            display: block;
+            margin: 0 auto 24px;
+            text-shadow: 0 8px 32px rgba(200, 169, 110, 0.35);
+            line-height: 1;
+        }
+        .hero-divider {
+            width: 56px;
+            height: 1px;
+            background: var(--gold);
+            margin: 0 auto 22px;
+            position: relative;
+        }
+        .hero-divider::before,
+        .hero-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .hero-divider::before {
+            left: -8px;
+        }
+        .hero-divider::after {
+            right: -8px;
+        }
+
+        .hero-sub {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(17px, 2.8vw, 22px);
+            color: var(--gold);
+            font-weight: 500;
+            font-style: italic;
+            margin: 0 0 14px;
+            letter-spacing: 1.5px;
+        }
+        .hero-desc {
+            font-size: 15px;
+            color: #C4BCB3;
+            max-width: 500px;
+            margin: 0 auto 16px;
+            line-height: 1.8;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: var(--gold);
+            color: var(--dark);
+            border: none;
+            padding: 14px 36px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.3px;
+        }
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(200, 169, 110, 0.35);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--cream);
+            border: 1px solid rgba(200, 169, 110, 0.45);
+            padding: 14px 36px;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            transition: border-color 0.3s, color 0.3s, transform 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .hero-lang-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(200, 169, 110, 0.10);
+            border: 1px solid rgba(200, 169, 110, 0.20);
+            border-radius: 40px;
+            padding: 7px 22px 7px 18px;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #D4C9BC;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            backdrop-filter: blur(6px);
+        }
+        .hero-lang-badge .lang-dot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+            margin: 0 2px;
+        }
+        .hero-lang-badge span {
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.6;
+            animation: fadeIn 1s ease 1.5s both;
+        }
+        .scroll-hint span {
+            font-size: 10px;
+            color: var(--gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .scroll-wheel {
+            width: 22px;
+            height: 34px;
+            border: 1.5px solid rgba(200, 169, 110, 0.5);
+            border-radius: 11px;
+            position: relative;
+        }
+        .scroll-wheel::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 2px;
+            animation: scrollDot 2s ease infinite;
+        }
+
+        /* ─── SECTION HEADER ─── */
+        .section-eyebrow {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 13px;
+            color: var(--gold);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 4.5vw, 44px);
+            font-weight: 700;
+            color: inherit;
+        }
+        .section-title.light {
+            color: var(--cream);
+        }
+        .section-rule {
+            width: 48px;
+            height: 2px;
+            background: var(--gold);
+            margin: 18px auto 0;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 52px;
+        }
+
+        /* ─── ABOUT ─── */
+        #about {
+            padding: 96px 28px;
+        }
+        .about-grid {
+            max-width: 1160px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 56px;
+            align-items: center;
+        }
+        .about-img-wrap {
+            border-radius: 14px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.14);
+            position: relative;
+        }
+        .about-img-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(200, 169, 110, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .about-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .about-img-wrap:hover img {
+            transform: scale(1.04);
+        }
+        .about-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 18px;
+        }
+        .about-text p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: var(--text-body);
+            margin-bottom: 18px;
+        }
+        .about-stats {
+            display: flex;
+            gap: 36px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+        .stat-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* ─── BREAKFAST HIGHLIGHT ─── */
+        #breakfast {
+            padding: 60px 28px 80px;
+            background: var(--section-alt);
+        }
+        .breakfast-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .breakfast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 28px;
+            margin-top: 32px;
+        }
+        .breakfast-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 28px 24px;
+            text-align: center;
+            border: 1px solid rgba(200, 169, 110, 0.12);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .breakfast-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
+        }
+        .breakfast-icon {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .breakfast-item h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 6px;
+        }
+        .breakfast-item p {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .breakfast-tag {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 16px;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+            margin-top: 10px;
+        }
+        .breakfast-hours {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 14px;
+            color: var(--text-body);
+            background: #fff;
+            border-radius: 30px;
+            padding: 10px 28px;
+            display: inline-block;
+            border: 1px solid rgba(200, 169, 110, 0.15);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+        .breakfast-hours strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        .breakfast-center {
+            text-align: center;
+        }
+
+        /* ─── MENU ─── */
+        #menu {
+            padding: 96px 28px;
+            background: #1C1510;
+        }
+        .menu-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 22px;
+            margin-top: 48px;
+        }
+        .menu-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(200, 169, 110, 0.08);
+            transition: transform 0.35s, box-shadow 0.35s;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.28);
+        }
+        .menu-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+        }
+        .menu-card-img {
+            position: relative;
+            aspect-ratio: 16/10;
+            overflow: hidden;
+        }
+        .menu-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.55s;
+        }
+        .menu-card:hover .menu-card-img img {
+            transform: scale(1.08);
+        }
+        .menu-badge {
+            position: absolute;
+            top: 11px;
+            left: 11px;
+            background: var(--gold);
+            color: var(--dark);
+            padding: 4px 11px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+        .menu-card-body {
+            padding: 18px 18px 22px;
+        }
+        .menu-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .menu-card-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--cream);
+            line-height: 1.3;
+        }
+        .menu-card-sub {
+            font-size: 12px;
+            color: var(--gold);
+            margin-top: 2px;
+        }
+        .menu-card-price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+        .menu-card-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+        .menu-cta {
+            text-align: center;
+            margin-top: 52px;
+        }
+        .menu-cta p {
+            font-size: 13px;
+            color: #6B5F52;
+            margin-top: 12px;
+        }
+
+        /* ─── GALLERY ─── */
+        #gallery {
+            padding: 96px 28px;
+            background: var(--section-alt);
+        }
+        .gallery-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 44px;
+        }
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+            cursor: pointer;
+            position: relative;
+            aspect-ratio: 1/1;
+            background: #ddd;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            bottom: 12px;
+            right: 14px;
+            font-size: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+        .gallery-item:hover::after {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 900px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+        @media (max-width: 400px) {
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+        }
+
+        /* ─── LIGHTBOX ─── */
+        .lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 3000;
+            background: rgba(10, 7, 4, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.35s ease;
+            padding: 20px;
+        }
+        .lightbox-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .lightbox-container {
+            position: relative;
+            width: 100%;
+            max-width: 1100px;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox-image-wrap {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            max-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.5);
+            touch-action: none;
+        }
+        .lightbox-image-wrap img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.15s ease;
+            user-select: none;
+            -webkit-user-drag: none;
+            cursor: grab;
+        }
+        .lightbox-image-wrap img:active {
+            cursor: grabbing;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.25s, transform 0.2s;
+            font-family: 'Inter', sans-serif;
+            line-height: 1;
+        }
+        .lightbox-close:hover {
+            background: rgba(200, 169, 110, 0.3);
+            transform: scale(1.06);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            color: #fff;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            font-size: 28px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.25s, transform 0.2s, opacity 0.3s;
+            font-family: 'Inter', sans-serif;
+            line-height: 1;
+            user-select: none;
+        }
+        .lightbox-nav:hover {
+            background: rgba(200, 169, 110, 0.35);
+            transform: translateY(-50%) scale(1.06);
+        }
+        .lightbox-nav.prev {
+            left: 16px;
+        }
+        .lightbox-nav.next {
+            right: 16px;
+        }
+        .lightbox-nav.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+            font-weight: 400;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 6px 18px;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .lightbox-zoom-hint {
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-family: 'Inter', sans-serif;
+            pointer-events: none;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.6s;
+        }
+        .lightbox-overlay.open .lightbox-zoom-hint {
+            opacity: 1;
+        }
+
+        @media (max-width: 900px) {
+            .lightbox-image-wrap {
+                height: 65vh;
+                max-height: 65vh;
+            }
+            .lightbox-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 22px;
+            }
+            .lightbox-nav.prev {
+                left: 8px;
+            }
+            .lightbox-nav.next {
+                right: 8px;
+            }
+        }
+        @media (max-width: 600px) {
+            .lightbox-image-wrap {
+                height: 55vh;
+                max-height: 55vh;
+            }
+            .lightbox-nav {
+                width: 34px;
+                height: 34px;
+                font-size: 18px;
+            }
+            .lightbox-close {
+                width: 36px;
+                height: 36px;
+                font-size: 20px;
+                top: 10px;
+                right: 12px;
+            }
+            .lightbox-counter {
+                font-size: 11px;
+                padding: 4px 14px;
+                bottom: 14px;
+            }
+            .lightbox-zoom-hint {
+                display: none;
+            }
+        }
+
+        /* ─── REVIEWS ─── */
+        #reviews {
+            padding: 96px 28px;
+        }
+        .reviews-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .rating-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin: 32px 0 48px;
+            flex-wrap: wrap;
+        }
+        .rating-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1;
+        }
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            gap: 3px;
+            margin-top: 6px;
+        }
+        .rating-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+        .rating-divider {
+            width: 1px;
+            height: 80px;
+            background: #E0D6CC;
+        }
+        .rating-links {
+            font-size: 14px;
+            color: var(--text-body);
+            line-height: 1.7;
+            max-width: 320px;
+        }
+        .rating-links strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--dark);
+        }
+        .rating-links a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .rating-links a:hover {
+            opacity: 0.75;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+        .review-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 28px;
+            border: 1px solid rgba(200, 169, 110, 0.12);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+        }
+        .review-text {
+            font-size: 14px;
+            line-height: 1.78;
+            color: #3D3228;
+            margin: 14px 0 6px;
+            font-style: italic;
+        }
+        .review-translation {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0 0 12px;
+        }
+        .review-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+            padding-top: 12px;
+            border-top: 1px solid #F0E8DC;
+        }
+        .reviewer-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        .review-meta {
+            text-align: right;
+        }
+        .review-date {
+            font-size: 11px;
+            color: #B0A296;
+            display: block;
+        }
+        .review-source {
+            font-size: 11px;
+            color: var(--gold);
+        }
+
+        /* ─── REVIEW THUMBNAIL ─── */
+        .review-thumb-wrap {
+            margin: 10px 0 8px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid rgba(200, 169, 110, 0.25);
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            transition: transform 0.25s, box-shadow 0.25s;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .review-thumb-wrap:hover {
+            transform: scale(1.06);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+            border-color: var(--gold);
+        }
+        .review-thumb-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .review-thumb-wrap .zoom-icon {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.25s;
+            font-size: 22px;
+            color: #fff;
+            pointer-events: none;
+        }
+        .review-thumb-wrap:hover .zoom-icon {
+            opacity: 1;
+        }
+        .review-thumb-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        /* ─── INSTAGRAM ─── */
+        #instagram {
+            padding: 96px 28px;
+            background: #1C1510;
+        }
+        .insta-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .insta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            margin-top: 48px;
+            justify-items: center;
+        }
+        .insta-embed-wrap {
+            width: 100%;
+            max-width: 380px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(200, 169, 110, 0.12);
+        }
+        .insta-embed-wrap .instagram-media {
+            width: 100% !important;
+            min-width: unset !important;
+            margin: 0 !important;
+            border-radius: 14px !important;
+            border: none !important;
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+        .insta-follow {
+            text-align: center;
+            margin-top: 36px;
+        }
+        .btn-instagram {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #F09433, #E6683C, #DC2743, #CC2366, #BC1888);
+            color: #fff;
+            padding: 13px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-instagram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(220, 39, 67, 0.35);
+        }
+
+        /* ─── CONTACT ─── */
+        #contact {
+            padding: 96px 28px;
+        }
+        .contact-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 36px;
+            margin-top: 44px;
+        }
+        .contact-card {
+            background: var(--section-alt);
+            border-radius: 14px;
+            padding: 40px;
+        }
+        .contact-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 28px;
+        }
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+        .contact-label {
+            font-size: 11px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .contact-value {
+            font-size: 14px;
+            color: #3D3228;
+            line-height: 1.75;
+            white-space: pre-line;
+        }
+        .contact-value a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+        .contact-value a:hover {
+            opacity: 0.75;
+        }
+        .contact-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 28px;
+            flex-wrap: wrap;
+        }
+        .social-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .social-icon:hover {
+            background: var(--gold);
+            transform: translateY(-2px);
+        }
+        .map-wrap {
+            border-radius: 14px;
+            overflow: hidden;
+            min-height: 360px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        }
+        .map-wrap iframe {
+            border: 0;
+            display: block;
+            width: 100%;
+            height: 360px;
+        }
+
+        /* ─── LANGUAGE TAG IN CONTACT ─── */
+        .lang-tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 4px;
+        }
+        .lang-tag {
+            background: rgba(200, 169, 110, 0.12);
+            border: 1px solid rgba(200, 169, 110, 0.18);
+            border-radius: 30px;
+            padding: 4px 14px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-body);
+            letter-spacing: 0.2px;
+        }
+        .lang-tag span {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* ─── TELEGRAM FLOATING BUTTON ─── */
+        .telegram-float {
+            position: fixed;
+            bottom: 90px;
+            right: 28px;
+            z-index: 850;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #0088cc;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(0, 136, 204, 0.45);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            animation: telegramPulse 2.8s infinite;
+        }
+        .telegram-float:hover {
+            transform: scale(1.08) translateY(-3px);
+            box-shadow: 0 10px 36px rgba(0, 136, 204, 0.55);
+        }
+        .telegram-float svg {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+            display: block;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: #14100B;
+            border-top: 1px solid rgba(200, 169, 110, 0.08);
+            padding: 56px 0 0;
+        }
+        .footer-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 36px;
+            margin-bottom: 44px;
+        }
+        .footer-logo-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .footer-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 3px;
+        }
+        .footer-tagline {
+            font-size: 13px;
+            color: #7A6D60;
+            line-height: 1.75;
+            max-width: 240px;
+        }
+        .footer-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--cream);
+            margin-bottom: 16px;
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+        .footer-links a,
+        .footer-links button {
+            background: none;
+            border: none;
+            color: #7A6D60;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: left;
+            padding: 0;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+        .footer-links a:hover,
+        .footer-links button:hover {
+            color: var(--gold);
+        }
+        .footer-address {
+            font-size: 13px;
+            color: #7A6D60;
+            line-height: 1.85;
+        }
+        .footer-address a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        .footer-address a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(200, 169, 110, 0.1);
+            padding: 22px 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer-bottom-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+        }
+        .footer-bottom span {
+            font-size: 12px;
+            color: #4A3F35;
+        }
+        .footer-love {
+            font-size: 13px;
+            color: #6B5F52;
+            text-align: center;
+            padding: 14px 0 20px;
+            letter-spacing: 0.3px;
+        }
+        .footer-love span {
+            color: var(--gold);
+        }
+
+        /* ─── SCROLL-TO-TOP ─── */
+        #scrollTop {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 800;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--gold);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+            cursor: pointer;
+            transition: transform 0.3s, opacity 0.3s, background 0.3s;
+            opacity: 0;
+            pointer-events: none;
+            animation: pulseGold 2.5s infinite;
+        }
+        #scrollTop.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+        #scrollTop:hover {
+            background: var(--gold-light);
+            transform: translateY(-3px);
+        }
+
+        /* ─── ORDER MODAL ─── */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 7, 4, 0.85);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .modal-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+            animation: overlayIn 0.3s ease;
+        }
+        .modal-box {
+            background: #1C1510;
+            border-radius: 18px;
+            padding: 44px;
+            max-width: 520px;
+            width: 100%;
+            border: 1px solid rgba(200, 169, 110, 0.18);
+            box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
+            animation: modalIn 0.35s ease;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .modal-box::-webkit-scrollbar {
+            width: 4px;
+        }
+        .modal-box::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .modal-box::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 2px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 22px;
+            transition: color 0.2s;
+            line-height: 1;
+        }
+        .modal-close:hover {
+            color: var(--gold);
+        }
+        .modal-eyebrow {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 13px;
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .modal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--cream);
+            margin-bottom: 8px;
+        }
+        .modal-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+        .order-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .order-btn {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(200, 169, 110, 0.15);
+            background: rgba(255, 255, 255, 0.03);
+            text-decoration: none;
+            cursor: pointer;
+            transition: border-color 0.25s, background 0.25s, transform 0.2s;
+        }
+        .order-btn:hover {
+            border-color: var(--gold);
+            background: rgba(200, 169, 110, 0.07);
+            transform: translateX(4px);
+        }
+        .order-btn-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+            background: #fff;
+        }
+        .order-btn-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .order-btn-text {
+            flex: 1;
+        }
+        .order-btn-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--cream);
+            display: block;
+        }
+        .order-btn-hint {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .order-btn-arrow {
+            font-size: 18px;
+            color: var(--gold);
+            opacity: 0.6;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .order-btn:hover .order-btn-arrow {
+            opacity: 1;
+            transform: translateX(3px);
+        }
+
+        /* ─── LEGAL MODALS ─── */
+        .legal-modal .modal-box {
+            max-width: 680px;
+            padding: 44px 48px;
+        }
+        .legal-modal .modal-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--cream);
+            margin: 28px 0 12px;
+        }
+        .legal-modal .modal-box h3:first-of-type {
+            margin-top: 8px;
+        }
+        .legal-modal .modal-box p,
+        .legal-modal .modal-box li {
+            font-size: 13.5px;
+            color: #B8ADA0;
+            line-height: 1.8;
+        }
+        .legal-modal .modal-box ul {
+            padding-left: 22px;
+            margin: 8px 0 16px;
+        }
+        .legal-modal .modal-box li {
+            margin-bottom: 4px;
+        }
+        .legal-modal .modal-box .legal-meta {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .legal-modal .modal-box .legal-meta strong {
+            color: var(--cream);
+            font-weight: 600;
+        }
+        .legal-modal .modal-box hr {
+            border: none;
+            border-top: 1px solid rgba(200, 169, 110, 0.12);
+            margin: 24px 0 12px;
+        }
+        .legal-modal .modal-box .contact-block {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin: 12px 0 16px;
+        }
+        .legal-modal .modal-box .contact-block p {
+            margin: 2px 0;
+            font-size: 13.5px;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 900px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none !important;
+            }
+            .hamburger {
+                display: flex !important;
+            }
+            .modal-box {
+                padding: 30px 24px;
+            }
+            .legal-modal .modal-box {
+                padding: 30px 22px;
+            }
+            .about-grid {
+                gap: 32px;
+            }
+            .nav-logo-text {
+                font-size: 15px;
+                white-space: normal;
+            }
+            .telegram-float {
+                width: 50px;
+                height: 50px;
+                bottom: 80px;
+                right: 16px;
+            }
+            .telegram-float svg {
+                width: 26px;
+                height: 26px;
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-logo-text {
+                font-size: 60px;
+            }
+            .footer-logo-text {
+                font-size: 22px;
+            }
+            .legal-modal .modal-box {
+                padding: 24px 18px;
+            }
+            .hero-lang-badge {
+                font-size: 11px;
+                padding: 5px 14px 5px 12px;
+                gap: 8px;
+            }
+            .lang-tag-group {
+                gap: 6px;
+            }
+            .lang-tag {
+                font-size: 11px;
+                padding: 3px 10px;
+            }
+        }
+
+        .star-gold {
+            fill: #C8A96E;
+        }
+        .star-empty {
+            fill: #D8CFC4;
+        }
+        .star-half {
+            fill: #C8A96E;
+        }
+        .star-half-bg {
+            fill: #D8CFC4;
+        }
+
+        .hero-contact-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(200, 169, 110, 0.10);
+            border: 1px solid rgba(200, 169, 110, 0.20);
+            border-radius: 30px;
+            padding: 8px 20px 8px 16px;
+            margin-top: 22px;
+            font-size: 14px;
+            color: #D4C9BC;
+            text-decoration: none;
+            transition: background 0.3s, border-color 0.3s, transform 0.2s;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+        }
+        .hero-contact-badge svg {
+            flex-shrink: 0;
+        }
+        .hero-contact-badge:hover {
+            background: rgba(200, 169, 110, 0.18);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+            color: #fff;
+        }
+        .hero-contact-badge strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* ─── BREAKFAST ITEMS ─── */
+        .breakfast-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 36px 0 28px;
+        }
+        .breakfast-feature {
+            background: #fff;
+            border-radius: 14px;
+            padding: 26px 20px 22px;
+            text-align: center;
+            border: 1px solid rgba(200, 169, 110, 0.10);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .breakfast-feature:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+        }
+        .breakfast-feature .bf-icon {
+            font-size: 34px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .breakfast-feature h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+        .breakfast-feature p {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .breakfast-feature .bf-tag {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 14px;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+            margin-top: 8px;
+        }
+        .breakfast-banner {
+            background: #fff;
+            border-radius: 14px;
+            padding: 18px 28px;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 1px solid rgba(200, 169, 110, 0.12);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            margin-top: 8px;
+        }
+        .breakfast-banner span {
+            font-size: 14px;
+            color: var(--text-body);
+        }
+        .breakfast-banner strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        .breakfast-banner .dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--gold);
+            display: inline-block;
+        }
+        @media (max-width: 480px) {
+            .breakfast-banner {
+                padding: 14px 18px;
+                gap: 10px;
+            }
+            .breakfast-banner span {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+    <nav id="mainNav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo" aria-label="LULU Café – Nach oben" onclick="navScrollTo('hero'); return false;">
+                <span class="nav-logo-text">LULU</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <button onclick="navScrollTo('hero')" data-de="Start" data-en="Home">Start</button>
+                <button onclick="navScrollTo('about')" data-de="Über uns" data-en="About us">Über uns</button>
+                <button onclick="navScrollTo('breakfast')" data-de="Frühstück" data-en="Breakfast">Frühstück</button>
+                <button onclick="navScrollTo('menu')" data-de="Speisekarte" data-en="Menu">Speisekarte</button>
+                <button onclick="navScrollTo('gallery')" data-de="Galerie" data-en="Gallery">Galerie</button>
+                <button onclick="navScrollTo('reviews')" data-de="Bewertungen" data-en="Reviews">Bewertungen</button>
+                <button onclick="navScrollTo('contact')" data-de="Kontakt" data-en="Contact">Kontakt</button>
+                <div class="lang-toggle" aria-label="Sprache wechseln">
+                    <button class="lang-btn active" id="btnDE" onclick="setLang('de')">DE</button>
+                    <button class="lang-btn" id="btnEN" onclick="setLang('en')">EN</button>
+                </div>
+                <button class="btn-order" onclick="openOrderModal()" data-de="Jetzt Bestellen" data-en="Order Now">Jetzt Bestellen</button>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menü" onclick="toggleMobile()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobileNav">
+        <button onclick="navScrollTo('hero');closeMobile()" data-de="Start" data-en="Home">Start</button>
+        <button onclick="navScrollTo('about');closeMobile()" data-de="Über uns" data-en="About us">Über uns</button>
+        <button onclick="navScrollTo('breakfast');closeMobile()" data-de="Frühstück" data-en="Breakfast">Frühstück</button>
+        <button onclick="navScrollTo('menu');closeMobile()" data-de="Speisekarte" data-en="Menu">Speisekarte</button>
+        <button onclick="navScrollTo('gallery');closeMobile()" data-de="Galerie" data-en="Gallery">Galerie</button>
+        <button onclick="navScrollTo('reviews');closeMobile()" data-de="Bewertungen" data-en="Reviews">Bewertungen</button>
+        <button onclick="navScrollTo('contact');closeMobile()" data-de="Kontakt" data-en="Contact">Kontakt</button>
+        <div style="display:flex;gap:8px;padding:10px 0;">
+            <button class="lang-btn active" id="btnDE2" style="background:var(--gold);color:var(--dark);padding:6px 16px;border-radius:14px;font-weight:600;font-size:13px;border:none;cursor:pointer;" onclick="setLang('de')">DE</button>
+            <button class="lang-btn" id="btnEN2" style="background:none;color:#9A8D7E;padding:6px 16px;border-radius:14px;font-weight:600;font-size:13px;border:1px solid rgba(200,169,110,0.2);cursor:pointer;" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="btn-order-mobile" onclick="openOrderModal();closeMobile()" data-de="Jetzt Bestellen" data-en="Order Now">Jetzt Bestellen</button>
+    </div>
+
+    <!-- ═══════════════════════════════════ HERO ══════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-logo-text anim-fadeInDown">LULU Café &amp; Brunch</span>
+            <div class="hero-divider anim-fadeIn anim-d1"></div>
+            <p class="hero-sub anim-fadeInUp anim-d2" data-de="Osteuropäische Küche · Frankfurt Gallus" data-en="Eastern European Cuisine · Frankfurt Gallus">Osteuropäische Küche · Frankfurt Gallus</p>
+            <p class="hero-desc anim-fadeInUp anim-d3" data-de="Authentische hausgemachte Gerichte aus Osteuropa — zubereitet mit Leidenschaft, serviert mit Herzlichkeit." data-en="Authentic homemade dishes from Eastern Europe — prepared with passion, served with warmth.">Authentische hausgemachte Gerichte aus Osteuropa — zubereitet mit Leidenschaft, serviert mit Herzlichkeit.</p>
+
+            <div class="hero-btns anim-fadeInUp anim-d4">
+                <button class="btn-primary" onclick="navScrollTo('menu')" data-de="Speisekarte" data-en="View Menu">Speisekarte</button>
+                <button class="btn-secondary" onclick="openOrderModal()" data-de="Online Bestellen" data-en="Order Online">Online Bestellen</button>
+            </div>
+            <a href="tel:+491621855064" class="hero-contact-badge anim-fadeInUp anim-d5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span><strong>+49 162 1855064</strong> · <span data-de="Jetzt anrufen" data-en="Call now">Jetzt anrufen</span></span>
+            </a>
+        </div>
+        <div class="scroll-hint">
+            <div class="scroll-wheel"></div>
+            <span data-de="Scrollen" data-en="Scroll">Scrollen</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ ABOUT ═════════════════════════════════ -->
+    <section id="about">
+        <div style="max-width:1160px;margin:0 auto;">
+            <div class="section-header reveal">
+                <span class="section-eyebrow" data-de="Unsere Geschichte" data-en="Our Story">Unsere Geschichte</span>
+                <h2 class="section-title" data-de="Über LULU" data-en="About LULU">Über LULU</h2>
+                <div class="section-rule"></div>
+            </div>
+            <div class="about-grid">
+                <div class="reveal-left">
+                    <div class="about-img-wrap">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6f64d5d1fb1a3dcfa30d140ba5224ec8/63cdd1044c1bf03a6f4ce3a9422016b8.jpeg" alt="LULU Café Eingang Frankfurt Gallus" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3 data-de="Tradition trifft Herzlichkeit" data-en="Where Tradition Meets Warmth">Tradition trifft Herzlichkeit</h3>
+                    <p data-de="Mitten im Frankfurter Stadtteil Gallus hat LULU seinen Platz gefunden — ein Café, das die Wärme osteuropäischer Gastfreundschaft in jede Mahlzeit steckt. Von der Küche über den Tisch bis zum letzten Löffel Sauerrahm: Alles entsteht mit Liebe und nach überlieferten Familienrezepten." data-en="Nestled in Frankfurt's Gallus district, LULU has found its home — a café that pours the warmth of Eastern European hospitality into every meal. From the kitchen to the table, right down to the last spoonful of sour cream: everything is made with love and treasured family recipes.">Mitten im Frankfurter Stadtteil Gallus hat LULU seinen Platz gefunden — ein Café, das die Wärme osteuropäischer Gastfreundschaft in jede Mahlzeit steckt. Von der Küche über den Tisch bis zum letzten Löffel Sauerrahm: Alles entsteht mit Liebe und nach überlieferten Familienrezepten.</p>
+                    <p data-de="Unsere Speisekarte trägt Gerichte, die seit Generationen in Küchen Russlands, der Ukraine und Zentralasiens zuhause sind — Pelmeni, Manti, Borschtsch, Blini und hausgemachte Kuchen. Frisch, ehrlich, unvergesslich." data-en="Our menu features dishes that have been at home in the kitchens of Russia, Ukraine, and Central Asia for generations — Pelmeni, Manti, Borscht, Blini and homemade pastries. Fresh, honest, unforgettable.">Unsere Speisekarte trägt Gerichte, die seit Generationen in Küchen Russlands, der Ukraine und Zentralasiens zuhause sind — Pelmeni, Manti, Borschtsch, Blini und hausgemachte Kuchen. Frisch, ehrlich, unvergesslich.</p>
+                    <div style="margin-top:20px;padding:16px 20px;background:var(--section-alt);border-radius:10px;border-left:3px solid var(--gold);">
+                        <p style="font-size:14px;color:var(--text-body);margin:0;line-height:1.7;">
+                            <span data-de=" Wir heißen Sie herzlich willkommen und sprechen" data-en=" We warmly welcome you and speak"> Wir heißen Sie herzlich willkommen und sprechen</span>
+                            <strong style="color:var(--gold);">Deutsch · English · Русский · Українська</strong>
+                            <span data-de="— fühlen Sie sich zuhause!" data-en="— make yourself at home!">— fühlen Sie sich zuhause!</span>
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-num">100%</div>
+                            <div class="stat-label" data-de="Hausgemacht" data-en="Homemade">Hausgemacht</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num" data-de="Täglich" data-en="Daily">Täglich</div>
+                            <div class="stat-label" data-de="Frisch" data-en="Fresh">Frisch</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">4.9★</div>
+                            <div class="stat-label" data-de="Bewertung" data-en="Rating">Bewertung</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ BREAKFAST ════════════════════════════════ -->
+    <section id="breakfast">
+        <div class="breakfast-inner">
+            <div class="section-header reveal">
+                <span class="section-eyebrow" data-de="Start in den Tag" data-en="Start Your Day">Start in den Tag</span>
+                <h2 class="section-title" data-de="Frühstück bei LULU" data-en="Breakfast at LULU">Frühstück bei LULU</h2>
+                <div class="section-rule"></div>
+                <p style="font-size:15px;color:#7A6D60;margin:16px auto 0;max-width:540px;" data-de="Täglich frisch zubereitet – von herzhaft bis süß. Genießen Sie den Morgen mit unseren hausgemachten Spezialitäten." data-en="Freshly prepared daily – from savory to sweet. Enjoy your morning with our homemade specialties.">Täglich frisch zubereitet – von herzhaft bis süß. Genießen Sie den Morgen mit unseren hausgemachten Spezialitäten.</p>
+            </div>
+
+            <div class="breakfast-features reveal">
+
+            </div>
+
+            <div class="breakfast-center reveal">
+                <div class="breakfast-banner">
+                    <span>🕐 <strong data-de="Frühstück täglich" data-en="Breakfast daily">Frühstück täglich</strong></span>
+                    <span class="dot"></span>
+                    <span><strong>08:00 – 14:00</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ MENU ══════════════════════════════════ -->
+    <section id="menu">
+        <div class="menu-inner">
+            <div class="section-header reveal">
+                <span class="section-eyebrow" data-de="Kulinarische Genüsse" data-en="Culinary Delights">Kulinarische Genüsse</span>
+                <h2 class="section-title light" data-de="Unsere Speisekarte" data-en="Our Menu">Unsere Speisekarte</h2>
+                <div class="section-rule"></div>
+                <p style="font-size:15px;color:#9A8D7E;margin:16px auto 0;max-width:520px;" data-de="Eine Auswahl unserer beliebtesten Gerichte — direkt aus der Küche auf Ihren Tisch." data-en="A selection of our most popular dishes — straight from the kitchen to your table.">Eine Auswahl unserer beliebtesten Gerichte — direkt aus der Küche auf Ihren Tisch.</p>
+            </div>
+            <div class="menu-grid">
+
+                <div class="menu-card reveal reveal-d1">
+                    <div class="menu-card-img">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/bef042515b546363c0992ea0b0357741/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Hausgemachte Pelmeni" loading="lazy">
+                        <span class="menu-badge" data-de="Beliebtestes Gericht" data-en="Most Popular">Beliebtestes Gericht</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <div>
+                                <div class="menu-card-name" data-de="Hausgemachte Pelmeni" data-en="Homemade Pelmeni">Hausgemachte Pelmeni</div>
+                                <div class="menu-card-sub" data-de="mit Hähnchenfleisch" data-en="with chicken">mit Hähnchenfleisch</div>
+                            </div>
+                            <span class="menu-card-price">10,00 €</span>
+                        </div>
+                        <p class="menu-card-desc" data-de="Traditionelle hausgemachte Pelmeni mit saftigem Hähnchenfleisch, serviert mit Sauerrahm." data-en="Traditional homemade Pelmeni with juicy chicken, served with sour cream.">Traditionelle hausgemachte Pelmeni mit saftigem Hähnchenfleisch, serviert mit Sauerrahm.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-d2">
+                    <div class="menu-card-img">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/5065833c8ee5e068f685a5655b1f2725/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Hausgemachte Manti" loading="lazy">
+                        <span class="menu-badge" data-de="#2 beliebt" data-en="#2 popular">#2 beliebt</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <div>
+                                <div class="menu-card-name" data-de="Hausgemachte Manti" data-en="Homemade Manti">Hausgemachte Manti</div>
+                                <div class="menu-card-sub" data-de="mit Schwein, Rind &amp; Kartoffeln" data-en="with pork, beef &amp; potatoes">mit Schwein, Rind &amp; Kartoffeln</div>
+                            </div>
+                            <span class="menu-card-price">12,00 €</span>
+                        </div>
+                        <p class="menu-card-desc" data-de="Gedämpfte hausgemachte Manti gefüllt mit Schweinefleisch, Rindfleisch und Kartoffeln nach traditioneller Art." data-en="Steamed homemade Manti filled with pork, beef and potatoes in the traditional way.">Gedämpfte hausgemachte Manti gefüllt mit Schweinefleisch, Rindfleisch und Kartoffeln nach traditioneller Art.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-d3">
+                    <div class="menu-card-img">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/f73b5ec4f57849de251794dd32a6babd/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Borschtsch" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <div>
+                                <div class="menu-card-name" data-de="Borschtsch" data-en="Borscht">Borschtsch</div>
+                                <div class="menu-card-sub" data-de="mit Geflügel &amp; Rind" data-en="with poultry &amp; beef">mit Geflügel &amp; Rind</div>
+                            </div>
+                            <span class="menu-card-price">9,50 €</span>
+                        </div>
+                        <p class="menu-card-desc" data-de="Traditionelle hausgemachte Rote-Bete-Suppe mit zartem Geflügel und Rindfleisch, serviert mit frischem Brot." data-en="Traditional homemade beetroot soup with tender poultry and beef, served with fresh bread.">Traditionelle hausgemachte Rote-Bete-Suppe mit zartem Geflügel und Rindfleisch, serviert mit frischem Brot.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-d1">
+                    <div class="menu-card-img">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e2bad9b960a9b89e31a5729574f08d76/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Hausgemachte Blini" loading="lazy">
+                        <span class="menu-badge" data-de="#3 beliebt" data-en="#3 popular">#3 beliebt</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <div>
+                                <div class="menu-card-name" data-de="Hausgemachte Blini" data-en="Homemade Blini">Hausgemachte Blini</div>
+                                <div class="menu-card-sub" data-de="Gefüllte Pfannkuchen" data-en="Filled Pancakes">Gefüllte Pfannkuchen</div>
+                            </div>
+                            <span class="menu-card-price">11,50 €</span>
+                        </div>
+                        <p class="menu-card-desc" data-de="Zarte hausgemachte Blini mit herzhafter Fleisch-, Hähnchen- oder Pilzfüllung, serviert als warme Vorspeise." data-en="Delicate homemade Blini with a savory meat, chicken or mushroom filling, served as a warm starter.">Zarte hausgemachte Blini mit herzhafter Fleisch-, Hähnchen- oder Pilzfüllung, serviert als warme Vorspeise.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-d2">
+                    <div class="menu-card-img">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e4a477a54425c5eb5e6cbead14efa9fc/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Honigtorte" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <div>
+                                <div class="menu-card-name" data-de="Honigtorte" data-en="Honey Cake">Honigtorte</div>
+                                <div class="menu-card-sub" data-de="Hausgemacht" data-en="Homemade">Hausgemacht</div>
+                            </div>
+                            <span class="menu-card-price">5,50 €</span>
+                        </div>
+                        <p class="menu-card-desc" data-de="Zarte Schichttorte mit Honig und samtiger Creme — ein süßes Meisterwerk nach traditionellem Rezept." data-en="Delicate layered cake with honey and velvety cream — a sweet masterpiece from a traditional recipe.">Zarte Schichttorte mit Honig und samtiger Creme — ein süßes Meisterwerk nach traditionellem Rezept.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-d3">
+                    <div class="menu-card-img">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/01026ebb350ad3bff3acb255384577f4/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Hausgemachte Soljanka" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <div>
+                                <div class="menu-card-name" data-de="Hausgemachte Soljanka" data-en="Homemade Solyanka">Hausgemachte Soljanka</div>
+                                <div class="menu-card-sub" data-de="Kräftiger Fleischeintopf" data-en="Hearty Meat Stew">Kräftiger Fleischeintopf</div>
+                            </div>
+                            <span class="menu-card-price">12,00 €</span>
+                        </div>
+                        <p class="menu-card-desc" data-de="Würzige, leicht säuerliche Suppe mit Rindfleisch, Wurst, Salzgurken und Oliven. Serviert mit Sauerrahm." data-en="Spicy, slightly sour soup with beef, sausage, gherkins and olives. Served with sour cream.">Würzige, leicht säuerliche Suppe mit Rindfleisch, Wurst, Salzgurken und Oliven. Serviert mit Sauerrahm.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-cta reveal">
+                <button class="btn-primary" onclick="openOrderModal()" data-de="Vollständige Speisekarte ansehen" data-en="View Full Menu">Vollständige Speisekarte ansehen</button>
+                <p data-de="Auf Uber Eats, Wolt oder Lieferando verfügbar" data-en="Available on Uber Eats, Wolt or Lieferando">Auf Uber Eats, Wolt oder Lieferando verfügbar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════ GALLERY ════════════════════════════════ -->
+    <section id="gallery">
+        <div class="gallery-inner">
+            <div class="section-header reveal">
+                <span class="section-eyebrow" data-de="Einblicke" data-en="Gallery">Einblicke</span>
+                <h2 class="section-title" data-de="Galerie" data-en="Gallery">Galerie</h2>
+                <div class="section-rule"></div>
+                <p style="font-size:15px;color:#7A6D60;margin:16px auto 0;max-width:500px;" data-de="Klicken Sie auf ein Bild, um es zu vergrößern — mit Zoom und Navigation." data-en="Click on an image to enlarge — with zoom and navigation.">Klicken Sie auf ein Bild, um es zu vergrößern — mit Zoom und Navigation.</p>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Dynamically rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════ LIGHTBOX ════════════════════════════════ -->
+    <div class="lightbox-overlay" id="lightboxOverlay" onclick="handleLightboxBackdrop(event)">
+        <div class="lightbox-container">
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Schließen">✕</button>
+            <button class="lightbox-nav prev" id="lbPrev" onclick="lightboxPrev(event)" aria-label="Vorheriges Bild">‹</button>
+            <button class="lightbox-nav next" id="lbNext" onclick="lightboxNext(event)" aria-label="Nächstes Bild">›</button>
+            <div class="lightbox-image-wrap" id="lbImageWrap">
+                <img id="lbImage" src="" alt="Vergrößertes Bild">
+            </div>
+            <div class="lightbox-counter" id="lbCounter">1 / 1</div>
+            <div class="lightbox-zoom-hint" data-de="Mausrad zum Zoomen · Scroll to zoom" data-en="Scroll to zoom · Mausrad zum Zoomen">Mausrad zum Zoomen · Scroll to zoom</div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════ REVIEWS ════════════════════════════════ -->
+    <section id="reviews">
+        <div class="reviews-inner">
+            <div class="section-header reveal">
+                <span class="section-eyebrow" data-de="Was Gäste sagen" data-en="What Guests Say">Was Gäste sagen</span>
+                <h2 class="section-title" data-de="Bewertungen" data-en="Reviews">Bewertungen</h2>
+                <div class="section-rule"></div>
+            </div>
+
+            <div class="rating-hero reveal">
+                <div style="text-align:center;">
+                    <div class="rating-number">4.9</div>
+                    <div class="rating-stars">
+                        <svg width="16" height="16" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="rating-label" data-de="128 Bewertungen · Google Maps" data-en="128 Reviews · Google Maps">128 Bewertungen · Google Maps</div>
+                </div>
+                <div class="rating-divider"></div>
+                <div class="rating-links">
+                    <strong data-de="Bewertungen auf Google Maps" data-en="Reviews on Google Maps">Bewertungen auf Google Maps</strong>
+                    <span data-de="Besuchen Sie unsere Google Maps Seite, um alle aktuellen Bewertungen zu lesen und selbst eine Bewertung zu hinterlassen." data-en="Visit our Google Maps page to read all current reviews and leave your own.">Besuchen Sie unsere Google Maps Seite, um alle aktuellen Bewertungen zu lesen und selbst eine Bewertung zu hinterlassen.</span><br>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Mainzer+Landstra%C3%9Fe+305+60326+Frankfurt+am+Main" target="_blank" rel="noopener noreferrer" data-de="Alle Google-Bewertungen lesen →" data-en="Read all Google reviews →">Alle Google-Bewertungen lesen →</a>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card reveal reveal-d1">
+                    <div class="rating-stars">
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">"Absolut fantastisch! Die Pelmeni sind wie bei meiner Großmutter in Kiew – zart, saftig und perfekt gewürzt. Der Borschtsch war ein Gedicht. Wir kommen wieder!"</p>
+                    <p class="review-translation">↳ Absolut fantastisch! Die Pelmeni sind wie bei meiner Großmutter in Kiew – zart, saftig und perfekt gewürzt. Der Borschtsch war ein Gedicht. Wir kommen wieder!</p>
+                    <div class="review-footer">
+                        <span class="reviewer-name">Olga K.</span>
+                        <div class="review-meta">
+                            <span class="review-date">Juni 2026</span>
+                            <span class="review-source">Uber Eats</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card reveal reveal-d2">
+                    <div class="rating-stars">
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">"Ein kleines Juwel in Gallus! Die hausgemachten Manti sind unglaublich – der Teig ist perfekt, die Füllung saftig und aromatisch. Die Honigtorte war das Sahnehäubchen."</p>
+                    <div class="review-footer">
+                        <span class="reviewer-name">Michael R.</span>
+                        <div class="review-meta">
+                            <span class="review-date">Mai 2026</span>
+                            <span class="review-source">Wolt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card reveal reveal-d3">
+                    <div class="rating-stars">
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">"Endlich authentische osteuropäische Küche in Frankfurt! Die Soljanka war perfekt – würzig, herzhaft und mit viel Liebe zubereitet. Die Blini waren ein Traum. Absolut empfehlenswert!"</p>
+                    <div class="review-footer">
+                        <span class="reviewer-name">Julia &amp; Thomas</span>
+                        <div class="review-meta">
+                            <span class="review-date">April 2026</span>
+                            <span class="review-source">Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ─── 4th REVIEW – with thumbnail that opens in lightbox ─── -->
+                <div class="review-card reveal reveal-d4">
+                    <div class="rating-stars">
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24"><path class="star-gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="review-text">"Добрый день Елена 😄, торт великолепный, большое спасибо!👍🏼"</p>
+                    <p class="review-translation">↳ Guten Tag, der Kuchen ist großartig, vielen Dank!👍🏼</p>
+                    <div class="review-thumb-row">
+                        <div class="review-thumb-wrap" onclick="openReviewLightbox()" title="Bild vergrößern">
+                            <img src="https://i.ibb.co/SX9xzDhz/image-2026-06-29-153509033.png" alt="Honigtorte – LULU Café" loading="lazy">
+                            <span class="zoom-icon"></span>
+                        </div>
+                        <span style="font-size:12px;color:var(--text-muted);"></span>
+                    </div>
+                    <div class="review-footer">
+                        <span class="reviewer-name">Anonymous</span>
+                        <div class="review-meta">
+                            <span class="review-date">Juni 2026</span>
+                            <span class="review-source">Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ─── END 4th REVIEW ─── -->
+
+            </div>
+
+            <div style="text-align:center;margin-top:36px;" class="reveal">
+                <a href="https://www.google.com/maps/search/?api=1&query=Mainzer+Landstra%C3%9Fe+305+60326+Frankfurt+am+Main" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:transparent;color:var(--gold);border:1px solid var(--gold);padding:12px 32px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;transition:background 0.3s,color 0.3s;font-family:'Inter',sans-serif;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--dark)'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'" data-de="Alle Bewertungen auf Google Maps →" data-en="All Reviews on Google Maps →">Alle Bewertungen auf Google Maps →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════ INSTAGRAM ══════════════════════════════ -->
+    <section id="instagram" style="padding:96px 28px;background:#1C1510;">
+        <div class="insta-inner">
+            <div class="section-header reveal">
+                <span class="section-eyebrow" data-de="Folgen Sie uns" data-en="Follow Us">Folgen Sie uns</span>
+                <h2 class="section-title light">@lulu_frankfurt_cafe</h2>
+                <div class="section-rule"></div>
+                <p style="font-size:15px;color:#9A8D7E;margin:16px auto 0;max-width:500px;" data-de="Aktuelle Einblicke, saisonale Specials und Momente aus unserem Café direkt auf Instagram." data-en="Current insights, seasonal specials and moments from our café directly on Instagram.">Aktuelle Einblicke, saisonale Specials und Momente aus unserem Café direkt auf Instagram.</p>
+            </div>
+            <div class="insta-grid reveal">
+                <div class="insta-embed-wrap">
+                    <blockquote class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/reel/DXHc6ZgDYR3/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style="background:transparent;border:0;border-radius:14px;margin:0;max-width:100%;min-width:unset;padding:0;width:100%;">
+                </blockquote>
+            </div>
+            <div class="insta-embed-wrap">
+                <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DXer79SjOHz/?utm_source=ig_embed&amp;utm_campaign=loading"
+                data-instgrm-version="14"
+                style="background:transparent;border:0;border-radius:14px;margin:0;max-width:100%;min-width:unset;padding:0;width:100%;">
+            </blockquote>
+        </div>
+    </div>
+    <div class="insta-follow reveal">
+        <a href="https://www.instagram.com/lulu_frankfurt_cafe/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <span data-de="Auf Instagram folgen" data-en="Follow on Instagram">Auf Instagram folgen</span>
+        </a>
+    </div>
+</div>
+</section>
+
+<!-- ══════════════════════════════════ CONTACT ════════════════════════════════ -->
+<section id="contact">
+    <div class="contact-inner">
+        <div class="section-header reveal">
+            <span class="section-eyebrow" data-de="Besuchen Sie uns" data-en="Visit Us">Besuchen Sie uns</span>
+            <h2 class="section-title" data-de="Kontakt &amp; Anfahrt" data-en="Contact &amp; Directions">Kontakt &amp; Anfahrt</h2>
+            <div class="section-rule"></div>
+        </div>
+        <div class="contact-grid">
+            <div class="reveal-left">
+                <div class="contact-card">
+                    <h3 data-de="Informationen" data-en="Information">Informationen</h3>
+                    <div class="contact-items">
+                        <div>
+                            <div class="contact-label" data-de="Adresse" data-en="Address">Adresse</div>
+                            <div class="contact-value">Mainzer Landstraße 305
+                                60326 Frankfurt am Main</div>
+                            </div>
+                            <div>
+                                <div class="contact-label" data-de="Telefon" data-en="Phone">Telefon</div>
+                                <div class="contact-value"><a href="tel:+491621855064">+49 162 1855064</a></div>
+                            </div>
+                            <div>
+                                <div class="contact-label" data-de="Öffnungszeiten" data-en="Opening Hours">Öffnungszeiten</div>
+                                <div class="contact-value" data-de="Mo &amp; So: 09:00 – 18:00
+                                Di: Ruhetag
+                                Mi – Sa: 09:00 – 18:00" data-en="Mon &amp; Sun: 09:00 – 18:00
+                            Tue: Closed
+                            Wed – Sat: 09:00 – 18:00">Mo &amp; So: 09:00 – 18:00
+                        Di: Ruhetag
+                    Mi – Sa: 09:00 – 18:00</div>
+                </div>
+                <div>
+                    <div class="contact-label" data-de="Küche" data-en="Cuisine">Küche</div>
+                    <div class="contact-value" data-de="Osteuropäisch · Premium · Traditionell" data-en="Eastern European · Premium · Traditional">Osteuropäisch · Premium · Traditionell</div>
+                </div>
+                <div>
+                    <div class="contact-label" data-de="Sprachen" data-en="Languages">Sprachen</div>
+                    <div class="lang-tag-group">
+                        <span class="lang-tag"><span>DE</span> Deutsch</span>
+                        <span class="lang-tag"><span>EN</span> English</span>
+                        <span class="lang-tag"><span>RU</span> Русский</span>
+                        <span class="lang-tag"><span>UA</span> Українська</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-social">
+                <a href="https://www.instagram.com/lulu_frankfurt_cafe/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="#FAF6F1"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="https://t.me/Cafelulubrunch" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Telegram" style="background:#0088cc;">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="#FAF6F1"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </a>
+            </div>
+            <div style="margin-top:18px;">
+                <div class="contact-label" data-de="Schnelle Frage per Telegram" data-en="Quick question via Telegram">Schnelle Frage per Telegram</div>
+                <div style="margin-top:6px;">
+                    <a href="https://t.me/Cafelulubrunch" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:10px;background:#0088cc;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;transition:background 0.3s,transform 0.2s;font-family:'Inter',sans-serif;" onmouseover="this.style.background='#0077b3';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#0088cc';this.style.transform='none'">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <span>@Cafelulubrunch</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reveal-right">
+        <div class="map-wrap">
+            <iframe
+            title="LULU Café Standort"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.4!2d8.628116!3d50.101968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd098aee89f08b%3A0x3ca88a80aed78c4a!2sMainzer%20Landstra%C3%9Fe%20305%2C%2060326%20Frankfurt%20am%20Main!5e0!3m2!1sde!2sde!4v1700000000000"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ═══════════════════════════════════ FOOTER ════════════════════════════════ -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo-row">
+                    <span class="footer-logo-text">LULU</span>
+                </div>
+                <p class="footer-tagline" data-de="Osteuropäische Küche mit Herz — im Herzen von Frankfurt Gallus." data-en="Eastern European cuisine with heart — in the heart of Frankfurt Gallus.">Osteuropäische Küche mit Herz — im Herzen von Frankfurt Gallus.</p>
+            </div>
+            <div>
+                <h5 class="footer-heading" data-de="Navigation" data-en="Navigation">Navigation</h5>
+                <div class="footer-links">
+                    <button onclick="navScrollTo('hero')" data-de="Start" data-en="Home">Start</button>
+                    <button onclick="navScrollTo('about')" data-de="Über uns" data-en="About us">Über uns</button>
+                    <button onclick="navScrollTo('breakfast')" data-de="Frühstück" data-en="Breakfast">Frühstück</button>
+                    <button onclick="navScrollTo('menu')" data-de="Speisekarte" data-en="Menu">Speisekarte</button>
+                    <button onclick="navScrollTo('gallery')" data-de="Galerie" data-en="Gallery">Galerie</button>
+                    <button onclick="navScrollTo('reviews')" data-de="Bewertungen" data-en="Reviews">Bewertungen</button>
+                    <button onclick="navScrollTo('contact')" data-de="Kontakt" data-en="Contact">Kontakt</button>
+                </div>
+            </div>
+            <div>
+                <h5 class="footer-heading" data-de="Online Bestellen" data-en="Order Online">Online Bestellen</h5>
+                <div class="footer-links">
+                    <a href="https://www.ubereats.com/de-en/store/lulu-osteuropaische-kuche/dH9KoAvPVaiE3HVWMno9OQ" target="_blank" rel="noopener noreferrer">Uber Eats</a>
+                    <a href="https://wolt.com/de/deu/frankfurt/restaurant/lulu-cafe-brunch-frankfurt-gallus" target="_blank" rel="noopener noreferrer">Wolt</a>
+                    <a href="https://www.lieferando.de/speisekarte/lolo" target="_blank" rel="noopener noreferrer">Lieferando</a>
+                </div>
+            </div>
+            <div>
+                <h5 class="footer-heading" data-de="Rechtliches" data-en="Legal">Rechtliches</h5>
+                <div class="footer-links">
+                    <button onclick="openImpressum()" data-de="Impressum" data-en="Imprint">Impressum</button>
+                    <button onclick="openDatenschutz()" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</button>
+                </div>
+            </div>
+            <div>
+                <h5 class="footer-heading" data-de="Kontakt" data-en="Contact">Kontakt</h5>
+                <div class="footer-address">
+                    Mainzer Landstraße 305<br>
+                    60326 Frankfurt am Main<br>
+                    <a href="tel:+491621855064">+49 162 1855064</a><br>
+                    <a href="https://www.instagram.com/lulu_frankfurt_cafe/" target="_blank" rel="noopener noreferrer">@lulu_frankfurt_cafe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-love" data-de="Gemacht mit ♥ und Espresso" data-en="Made with ♥ and espresso">
+            Gemacht mit <span>♥</span> und Espresso
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-row">
+                <span data-de="© 2026 LULU Café &amp; Brunch. Alle Rechte vorbehalten." data-en="© 2026 LULU Café &amp; Brunch. All rights reserved.">© 2026 LULU Café &amp; Brunch. Alle Rechte vorbehalten.</span>
+                <span>Frankfurt Gallus · Mainzer Landstraße 305</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ═══════════════════════════════ SCROLL TOP ════════════════════════════════ -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Nach oben">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1410" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+</button>
+
+<!-- ═══════════════════════════ TELEGRAM FLOATING BUTTON ══════════════════════ -->
+<a href="https://t.me/Cafelulubrunch" target="_blank" rel="noopener noreferrer" class="telegram-float" aria-label="Telegram – Schnelle Frage">
+    <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+</a>
+
+<!-- ═══════════════════════════════ ORDER MODAL ════════════════════════════════ -->
+<div class="modal-overlay" id="orderModal" onclick="handleModalClick(event)">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeOrderModal()" aria-label="Schließen">×</button>
+        <span class="modal-eyebrow" data-de="Online bestellen" data-en="Order online">Online bestellen</span>
+        <h2 class="modal-title" data-de="Wo möchten Sie bestellen?" data-en="Where would you like to order?">Wo möchten Sie bestellen?</h2>
+        <p class="modal-sub" data-de="Wählen Sie Ihre bevorzugte Lieferplattform aus." data-en="Choose your preferred delivery platform.">Wählen Sie Ihre bevorzugte Lieferplattform aus.</p>
+        <div class="order-options">
+            <a href="https://www.ubereats.com/de-en/store/lulu-osteuropaische-kuche/dH9KoAvPVaiE3HVWMno9OQ" target="_blank" rel="noopener noreferrer" class="order-btn">
+                <div class="order-btn-icon" style="background:#3FC060; padding:4px;">
+                    <img src="https://play-lh.googleusercontent.com/nQpl8xd3y1dpvHp-VcZrQ7H8ikP5jDYi0tYdS-FzqKyb0qqBb-0FVzuC3eepETxYECADHSitC89yhvWkXxcy" alt="Uber Eats" style="width:100%;height:100%;object-fit:contain;border-radius:6px;">
+                </div>
+                <div class="order-btn-text">
+                    <span class="order-btn-name">Uber Eats</span>
+                    <span class="order-btn-hint" data-de="Jetzt bei Uber Eats bestellen" data-en="Order now on Uber Eats">Jetzt bei Uber Eats bestellen</span>
+                </div>
+                <span class="order-btn-arrow">→</span>
+            </a>
+            <a href="https://wolt.com/de/deu/frankfurt/restaurant/lulu-cafe-brunch-frankfurt-gallus" target="_blank" rel="noopener noreferrer" class="order-btn">
+                <div class="order-btn-icon" style="background:#02C2E8; padding:4px;">
+                    <img src="https://cdn.brandfetch.io/domain/wolt.com/fallback/lettermark/theme/dark/h/400/w/400/icon?c=1bfwsmEH20zzEfSNTed" alt="Wolt" style="width:100%;height:100%;object-fit:contain;border-radius:6px;">
+                </div>
+                <div class="order-btn-text">
+                    <span class="order-btn-name">Wolt</span>
+                    <span class="order-btn-hint" data-de="Jetzt bei Wolt bestellen" data-en="Order now on Wolt">Jetzt bei Wolt bestellen</span>
+                </div>
+                <span class="order-btn-arrow">→</span>
+            </a>
+            <a href="https://www.lieferando.de/speisekarte/lolo" target="_blank" rel="noopener noreferrer" class="order-btn">
+                <div class="order-btn-icon" style="background:#FF8000; padding:4px;">
+                    <img src="https://www.ieatvienna.at/wp-content/uploads/2020/05/lieferando.png" alt="Lieferando" style="width:100%;height:100%;object-fit:contain;border-radius:6px;">
+                </div>
+                <div class="order-btn-text">
+                    <span class="order-btn-name">Lieferando</span>
+                    <span class="order-btn-hint" data-de="Jetzt bei Lieferando bestellen" data-en="Order now on Lieferando">Jetzt bei Lieferando bestellen</span>
+                </div>
+                <span class="order-btn-arrow">→</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════ IMPRESSUM MODAL ═════════════════════════════ -->
+<div class="modal-overlay legal-modal" id="impressumModal" onclick="handleLegalModalClick(event, 'impressumModal')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeImpressum()" aria-label="Schließen">×</button>
+        <span class="modal-eyebrow">Rechtliches</span>
+        <h2 class="modal-title">Impressum</h2>
+        <p class="modal-sub" style="margin-bottom:20px;">Angaben gemäß § 5 TMG</p>
+
+        <div class="contact-block">
+            <p><strong style="color:var(--cream);">Betreiber:</strong> Igor Lotts</p>
+            <p><strong style="color:var(--cream);">Adresse:</strong> Mainzer Landstraße 305, 60326 Frankfurt am Main</p>
+            <p><strong style="color:var(--cream);">Telefon:</strong> <a href="tel:+491621855064" style="color:var(--gold);text-decoration:none;">+49 162 1855064</a></p>
+            <p><strong style="color:var(--cream);">E-Mail:</strong> <a href="mailto:Igorlotts74@gmail.com" style="color:var(--gold);text-decoration:none;">Igorlotts74@gmail.com</a></p>
+        </div>
+
+        <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+        <p>Igor Lotts, Mainzer Landstraße 305, 60326 Frankfurt am Main</p>
+
+        <h3>Haftung für Inhalte</h3>
+        <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+
+        <h3>Haftung für Links</h3>
+        <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+        <h3>Urheberrecht</h3>
+        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+
+        <hr>
+
+        <p style="font-size:12px;color:#6B5F52;margin-top:4px;">Stand: Juni 2026</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════ DATENSCHUTZ MODAL ═════════════════════════════ -->
+<div class="modal-overlay legal-modal" id="datenschutzModal" onclick="handleLegalModalClick(event, 'datenschutzModal')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeDatenschutz()" aria-label="Schließen">×</button>
+        <span class="modal-eyebrow">Rechtliches</span>
+        <h2 class="modal-title">Datenschutzerklärung</h2>
+        <p class="modal-sub" style="margin-bottom:20px;">Informationen gemäß Art. 13, 14 DSGVO</p>
+
+        <h3>1. Verantwortlicher</h3>
+        <div class="contact-block">
+            <p><strong style="color:var(--cream);">Igor Lotts</strong></p>
+            <p>Mainzer Landstraße 305, 60326 Frankfurt am Main</p>
+            <p>Telefon: <a href="tel:+491621855064" style="color:var(--gold);text-decoration:none;">+49 162 1855064</a></p>
+            <p>E-Mail: <a href="mailto:Igorlotts74@gmail.com" style="color:var(--gold);text-decoration:none;">Igorlotts74@gmail.com</a></p>
+        </div>
+
+        <h3>2. Allgemeines</h3>
+        <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG). In dieser Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.</p>
+
+        <h3>3. Erhebung und Speicherung personenbezogener Daten</h3>
+        <p>Beim Besuch unserer Website werden durch den Server automatisch Informationen gespeichert, die Ihr Browser übermittelt. Dies sind:</p>
+        <ul>
+            <li>IP-Adresse (anonymisiert)</li>
+            <li>Datum und Uhrzeit des Zugriffs</li>
+            <li>Browsertyp und -version</li>
+            <li>verwendetes Betriebssystem</li>
+            <li>Referrer-URL (die zuvor besuchte Seite)</li>
+        </ul>
+        <p>Diese Daten sind nicht bestimmten Personen zuordenbar und werden nicht mit anderen Datenquellen zusammengeführt. Die Verarbeitung erfolgt zur Gewährleistung der Sicherheit und Stabilität des Angebots (Art. 6 Abs. 1 lit. f DSGVO).</p>
+
+        <h3>4. Cookies</h3>
+        <p>Unsere Website verwendet keine Tracking-Cookies oder Marketing-Cookies. Es werden lediglich technisch notwendige Session-Cookies eingesetzt, die für den Betrieb der Seite erforderlich sind. Diese werden nach Beendigung Ihrer Browsersitzung automatisch gelöscht. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+        <h3>5. Weitergabe von Daten</h3>
+        <p>Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt. Wir geben Ihre Daten nur dann an Dritte weiter, wenn:</p>
+        <ul>
+            <li>Sie Ihre ausdrückliche Einwilligung dazu erteilt haben (Art. 6 Abs. 1 lit. a DSGVO),</li>
+            <li>die Weitergabe zur Erfüllung rechtlicher Verpflichtungen erforderlich ist (Art. 6 Abs. 1 lit. c DSGVO),</li>
+            <li>die Weitergabe zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist (Art. 6 Abs. 1 lit. f DSGVO).</li>
+        </ul>
+
+        <h3>6. Ihre Rechte</h3>
+        <p>Als betroffene Person stehen Ihnen folgende Rechte zu:</p>
+        <ul>
+            <li><strong>Auskunft</strong> (Art. 15 DSGVO) über Ihre gespeicherten Daten,</li>
+            <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO),</li>
+            <li><strong>Löschung</strong> Ihrer Daten (Art. 17 DSGVO),</li>
+            <li><strong>Einschränkung</strong> der Verarbeitung (Art. 18 DSGVO),</li>
+            <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO),</li>
+            <li><strong>Widerspruch</strong> gegen die Verarbeitung (Art. 21 DSGVO).</li>
+        </ul>
+        <p>Zudem haben Sie das Recht, sich bei der zuständigen Aufsichtsbehörde zu beschweren (Art. 77 DSGVO).</p>
+
+        <h3>7. Kontaktaufnahme</h3>
+        <p>Wenn Sie uns per E-Mail, Telefon oder über die angegebenen Kontaktwege kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO.</p>
+
+        <h3>8. Datensicherheit</h3>
+        <p>Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre Daten gegen Manipulation, Verlust, Zerstörung oder den Zugriff unberechtigter Personen zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert.</p>
+
+        <hr>
+
+        <p style="font-size:12px;color:#6B5F52;margin-top:4px;">Stand: Juni 2026</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════ SCRIPTS ═══════════════════════════════ -->
+<script async src="//www.instagram.com/embed.js"></script>
+<script>
+    // ─── Gallery Data ──────────────────────────────────────────────────────────
+    var galleryImages = [{
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiszoJ3d_0MJCroI9T5RygJP9Gx4CGEGaSfa3F4ObUlD6rRzI1v0A47tN0RjPbKV9JoJzWSDQ4uOXhvMmtIGUDbMBvzqllCJZNfJYYO9qeo04jSFYZyNhfWheQePpAlsYyY4D3yi9yYv_m=s680-w680-h510-rw',
+            alt: 'Entrance'
+        },
+        {
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGkMGJdiPirRn6av4WH6Zb_u5DviU8T9CdG3nVz_Qu_0cSjjvUIdwEfM9jmdPUeFa5WAtoxppZzlPEt4zQ0g5V3Vs6sw3lAdVhBmgk-sYVAdjiEyW0quJK9T3M5WKcxlExGO5ngrw5y5XqY=s680-w680-h510-rw',
+            alt: 'Photo'
+        },
+        {
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAFrOiU6xZlDl4_-w5b7kmn7Nq4KCwSKITgefbtYfCRqEqHkzLfeZpvzNEc0zSAlqJ6_DUMxkvLdqJOcMVPW85Yf13H8Gqg29iWy9VWq8zvdaeNGAv8sByu2czwIvVQJPujLIZ8Dz-XhdLY=s680-w680-h510-rw',
+            alt: 'Photo'
+        },
+        {
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEwg3WOCWoDliMOscGHofi6aiIvjLzTu7TkqzQExO31N3NzNtgox_iEl343PKToDYvp8TNKW4cKm3LCscW9PxWS5noVPqykB8geG30CC-lFrHGoPz4aKRrVaO3Wz-7aONqnz0-ZVZEcEgo8=s680-w680-h510-rw',
+            alt: 'Photo'
+        },
+        {
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHZE2zklH43c4id20cX0xLFlxtTizN54foTCY3d9fiovQLOq6qGg9rpBoV1vS_BrjzOa4sWnZJtf376-vJzRnVfjMhhuplU1aYjLUwT3i8yGdcvJ2q8cqiZkfNyXrN2-kZ4Ue-ThX7TnMML=s680-w680-h510-rw',
+            alt: 'Photo'
+        },
+        {
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAFLLXMYSY9SuRzo2_CfTm1TqKRFAWmD75nQg-R2xM-ZvbEPly0PhjM2QT4q7KzRp4U4eZJ6VvJrVRs-LmtdKt41CooSOC-lbRUm2Gr7mQLlE4efK64CHShlJN3UC1PtfxSFPn_11Mssuu8=s680-w680-h510-rw',
+            alt: 'Photo'
+        },
+        {
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG54DgB8yHHbJtXOIElBA_B_5N32KxWpsY9iKttPVmlnnmydD3Awp2GwoOmN07RVQ72s8VT3bAgXyw8H_s3beR2WrSLgsvIij5YjJKc6W1Gg80DPNRnRQzjFh2K3I5R0oq8SLn_gRkIfu0=s680-w680-h510-rw',
+            alt: 'Photo'
+        },
+        {
+            src: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHdZAul9y_CEL85VdykADlxyXl-RKD9es_NDcnQjZyORImlQ2hks8oZTfxtER2GZT5-uR2fisPsy9dPLOFBcq3taJu3juHVkZDamQuiSHeh-kTvUIPLX8p3mEmm9vgEQ6mBoZ7A7AdJgOlw=s680-w680-h510-rw',
+            alt: 'Photo'
+        },
+    ];
+
+    // ─── Render Gallery ──────────────────────────────────────────────────────
+    function renderGallery() {
+        var grid = document.getElementById('galleryGrid');
+        if (!grid) return;
+        grid.innerHTML = '';
+        galleryImages.forEach(function(img, idx) {
+            var div = document.createElement('div');
+            div.className = 'gallery-item';
+            div.setAttribute('data-index', idx);
+            var imgEl = document.createElement('img');
+            imgEl.src = img.src;
+            imgEl.alt = img.alt;
+            imgEl.loading = 'lazy';
+            imgEl.style.backgroundColor = '#e8ddd0';
+            div.appendChild(imgEl);
+            div.addEventListener('click', function(e) {
+                e.stopPropagation();
+                openLightbox(idx);
+            });
+            grid.appendChild(div);
+        });
+    }
+
+    // ─── Lightbox ─────────────────────────────────────────────────────────────
+    var lbImages = galleryImages.map(function(img) { return img.src; });
+    var lbAlts = galleryImages.map(function(img) { return img.alt; });
+    var currentIndex = 0;
+    var scale = 1;
+    var isPanning = false;
+    var startX = 0,
+        startY = 0;
+    var panX = 0,
+        panY = 0;
+    var startPanX = 0,
+        startPanY = 0;
+    var lbImg = document.getElementById('lbImage');
+    var lbWrap = document.getElementById('lbImageWrap');
+    var lbOverlay = document.getElementById('lightboxOverlay');
+    var lbCounter = document.getElementById('lbCounter');
+    var lbPrev = document.getElementById('lbPrev');
+    var lbNext = document.getElementById('lbNext');
+
+    // ─── Single-image mode for review ──────────────────────────────────────
+    var isSingleImageMode = false;
+    var singleImageUrl = '';
+
+    function openLightbox(index) {
+        isSingleImageMode = false;
+        currentIndex = Math.min(Math.max(index, 0), lbImages.length - 1);
+        scale = 1;
+        panX = 0;
+        panY = 0;
+        updateLightbox();
+        lbOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        updateNavButtons();
+    }
+
+    function openReviewLightbox() {
+        isSingleImageMode = true;
+        singleImageUrl = 'https://i.ibb.co/SX9xzDhz/image-2026-06-29-153509033.png';
+        scale = 1;
+        panX = 0;
+        panY = 0;
+        lbImg.src = singleImageUrl;
+        lbImg.alt = 'Honigtorte – LULU Café';
+        lbCounter.textContent = '1 / 1';
+        lbPrev.classList.add('hidden');
+        lbNext.classList.add('hidden');
+        applyTransform();
+        lbOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lbOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+        scale = 1;
+        panX = 0;
+        panY = 0;
+        applyTransform();
+        isSingleImageMode = false;
+        updateNavButtons();
+    }
+
+    function updateLightbox() {
+        lbImg.src = lbImages[currentIndex] || '';
+        lbImg.alt = lbAlts[currentIndex] || 'Bild';
+        lbCounter.textContent = (currentIndex + 1) + ' / ' + lbImages.length;
+        scale = 1;
+        panX = 0;
+        panY = 0;
+        applyTransform();
+        updateNavButtons();
+    }
+
+    function applyTransform() {
+        var transform = 'translate(' + panX + 'px, ' + panY + 'px) scale(' + scale + ')';
+        lbImg.style.transform = transform;
+        lbImg.style.cursor = scale > 1 ? 'grab' : 'default';
+    }
+
+    function updateNavButtons() {
+        if (isSingleImageMode) {
+            lbPrev.classList.add('hidden');
+            lbNext.classList.add('hidden');
+            return;
+        }
+        if (lbPrev) lbPrev.classList.toggle('hidden', currentIndex === 0);
+        if (lbNext) lbNext.classList.toggle('hidden', currentIndex === lbImages.length - 1);
+    }
+
+    function lightboxPrev(e) {
+        if (e) e.stopPropagation();
+        if (isSingleImageMode) return;
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateLightbox();
+        }
+    }
+
+    function lightboxNext(e) {
+        if (e) e.stopPropagation();
+        if (isSingleImageMode) return;
+        if (currentIndex < lbImages.length - 1) {
+            currentIndex++;
+            updateLightbox();
+        }
+    }
+
+    function handleLightboxBackdrop(e) {
+        if (e.target === lbOverlay) {
+            closeLightbox();
+        }
+    }
+
+    // ─── Zoom with mouse wheel ──────────────────────────────────────────────
+    if (lbWrap) {
+        lbWrap.addEventListener('wheel', function(e) {
+            e.preventDefault();
+            var delta = e.deltaY > 0 ? -0.08 : 0.08;
+            var newScale = Math.min(Math.max(scale + delta, 0.4), 4);
+            if (newScale !== scale) {
+                scale = newScale;
+                if (scale === 1) {
+                    panX = 0;
+                    panY = 0;
+                }
+                applyTransform();
+            }
+        }, { passive: false });
+    }
+
+    // ─── Pan with mouse drag ────────────────────────────────────────────────
+    if (lbImg) {
+        lbImg.addEventListener('mousedown', function(e) {
+            if (scale <= 1) return;
+            isPanning = true;
+            startX = e.clientX;
+            startY = e.clientY;
+            startPanX = panX;
+            startPanY = panY;
+            lbImg.style.cursor = 'grabbing';
+            e.preventDefault();
+        });
+    }
+
+    document.addEventListener('mousemove', function(e) {
+        if (!isPanning) return;
+        var dx = e.clientX - startX;
+        var dy = e.clientY - startY;
+        panX = startPanX + dx;
+        panY = startPanY + dy;
+        applyTransform();
+    });
+
+    document.addEventListener('mouseup', function() {
+        if (isPanning) {
+            isPanning = false;
+            if (lbImg) lbImg.style.cursor = scale > 1 ? 'grab' : 'default';
+        }
+    });
+
+    // ─── Touch support for pan ──────────────────────────────────────────────
+    var touchStartX = 0,
+        touchStartY = 0;
+    var touchStartPanX = 0,
+        touchStartPanY = 0;
+    var isTouching = false;
+
+    if (lbImg) {
+        lbImg.addEventListener('touchstart', function(e) {
+            if (scale <= 1) return;
+            var touch = e.touches[0];
+            touchStartX = touch.clientX;
+            touchStartY = touch.clientY;
+            touchStartPanX = panX;
+            touchStartPanY = panY;
+            isTouching = true;
+        }, { passive: true });
+
+        lbImg.addEventListener('touchmove', function(e) {
+            if (!isTouching || scale <= 1) return;
+            var touch = e.touches[0];
+            var dx = touch.clientX - touchStartX;
+            var dy = touch.clientY - touchStartY;
+            panX = touchStartPanX + dx;
+            panY = touchStartPanY + dy;
+            applyTransform();
+        }, { passive: true });
+
+        lbImg.addEventListener('touchend', function() {
+            isTouching = false;
+        }, { passive: true });
+
+        // ─── Double-click to reset zoom ────────────────────────────────────────
+        lbImg.addEventListener('dblclick', function(e) {
+            e.stopPropagation();
+            scale = 1;
+            panX = 0;
+            panY = 0;
+            applyTransform();
+        });
+    }
+
+    // ─── Keyboard navigation ────────────────────────────────────────────────
+    document.addEventListener('keydown', function(e) {
+        if (!lbOverlay || !lbOverlay.classList.contains('open')) return;
+        if (e.key === 'Escape') {
+            closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+            lightboxPrev(e);
+        } else if (e.key === 'ArrowRight') {
+            lightboxNext(e);
+        }
+    });
+
+    // ─── Navigation ────────────────────────────────────────────────────────────
+    function navScrollTo(id) {
+        var el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        var nav = document.getElementById('mainNav');
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 60);
+        var st = document.getElementById('scrollTop');
+        if (st) st.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    function toggleMobile() {
+        var nav = document.getElementById('mobileNav');
+        var btn = document.getElementById('hamburger');
+        if (nav) nav.classList.toggle('open');
+        if (btn) btn.classList.toggle('open');
+    }
+
+    function closeMobile() {
+        var nav = document.getElementById('mobileNav');
+        var btn = document.getElementById('hamburger');
+        if (nav) nav.classList.remove('open');
+        if (btn) btn.classList.remove('open');
+    }
+
+    // ─── Order Modal ──────────────────────────────────────────────────────────
+    function openOrderModal() {
+        var modal = document.getElementById('orderModal');
+        if (modal) modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeOrderModal() {
+        var modal = document.getElementById('orderModal');
+        if (modal) modal.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    function handleModalClick(e) {
+        if (e.target === document.getElementById('orderModal')) closeOrderModal();
+    }
+
+    // ─── Legal Modals ────────────────────────────────────────────────────────
+    function openImpressum() {
+        document.getElementById('impressumModal').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeImpressum() {
+        document.getElementById('impressumModal').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    function openDatenschutz() {
+        document.getElementById('datenschutzModal').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeDatenschutz() {
+        document.getElementById('datenschutzModal').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    function handleLegalModalClick(e, id) {
+        if (e.target === document.getElementById(id)) {
+            if (id === 'impressumModal') closeImpressum();
+            if (id === 'datenschutzModal') closeDatenschutz();
+        }
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeOrderModal();
+            closeImpressum();
+            closeDatenschutz();
+            if (lbOverlay && lbOverlay.classList.contains('open')) closeLightbox();
+        }
+    });
+
+    // ─── Language ──────────────────────────────────────────────────────────────
+    var currentLang = 'de';
+
+    function setLang(lang) {
+        currentLang = lang;
+
+        ['btnDE', 'btnEN', 'btnDE2', 'btnEN2'].forEach(function(id) {
+            var el = document.getElementById(id);
+            if (!el) return;
+            var isActive = (id.indexOf('DE') !== -1 && lang === 'de') || (id.indexOf('EN') !== -1 && lang === 'en');
+            el.classList.toggle('active', isActive);
+            if (id === 'btnDE2' || id === 'btnEN2') {
+                el.style.background = isActive ? 'var(--gold)' : 'none';
+                el.style.color = isActive ? 'var(--dark)' : '#9A8D7E';
+                el.style.border = isActive ? 'none' : '1px solid rgba(200,169,110,0.2)';
+            }
+        });
+
+        document.querySelectorAll('[data-' + lang + ']').forEach(function(el) {
+            var val = el.getAttribute('data-' + lang);
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = val;
+            } else {
+                el.innerHTML = val;
+            }
+        });
+
+        if (window.instgrm) window.instgrm.Embeds.process();
+    }
+
+    // ─── Init ──────────────────────────────────────────────────────────────────
+    window.addEventListener('load', function() {
+        renderGallery();
+        document.getElementById('hero').classList.add('loaded');
+        if (window.instgrm) window.instgrm.Embeds.process();
+
+        setTimeout(function() {
+            renderGallery();
+        }, 100);
+    });
+
+    // ─── Reveal observer ─────────────────────────────────────────────────────
+    var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(function(el) {
+        revealObserver.observe(el);
+    });
+</script>
+</body>
+</html>
